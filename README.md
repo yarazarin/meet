@@ -1,39 +1,50 @@
-Meet App
-This repository contains the code for the Meet App, an awesome web application built with React using a fancy technique called test-driven development (TDD). It uses some cool Google Calendar stuff to fetch upcoming events.
+![Meet App Logo](./01.png)
+# Meet App
 
-Objective
-The main goal of this project is to make a super cool web app that works without a server and can be used offline. It's all about providing a great user experience! We're using React and writing tests before coding (yeah, it's weird, but it works). Oh, and we're also adding some fancy graphs to make things look even better!
+Welcome to Meet App, a progressive web application (PWA) designed to help you explore upcoming events in various cities. This serverless application leverages the power of React and follows a test-driven development (TDD) approach to deliver a seamless user experience. By integrating the Google Calendar API, Meet App provides real-time event data to keep you informed and connected.
 
-Key Features
-Filter events by city (because who wants to see events from all over the world?)
-Show/hide event details (sometimes you want more, sometimes less, we get it)
-Choose the number of events you want to see (because too many events can be overwhelming)
-Use the app even when you're offline (no internet, no problem!)
-Add the app to your home screen (quick access, baby!)
-Check out cool charts showing upcoming events and genres (let's visualize the data!)
-User Stories
-As a user, I want to filter events by city so I can see what's happening in a specific place.
-As a user, I want to show/hide event details to get more or less info about an event.
-As a user, I want to specify how many events I want to see at once because too much is too much.
-As a user, I want to use the app offline and see the events I previously viewed (no internet, no worries).
-As a user, I want to add the app to my home screen so I can access it quickly.
-As a user, I want to see fancy charts showing upcoming events in different cities (visuals, baby!).
-Technical Requirements
-The app is built with React (the cool kid in town).
-We're doing test-driven development (writing tests first, yeah, you read it right).
-We're using Google Calendar API and OAuth2 for authentication (fancy stuff, huh?).
-Instead of a traditional server, we're going serverless (AWS Lambda is the cool guy).
-Our code is hosted on GitHub (because we're fancy developers).
-The app works on all major browsers and even IE11 (we love compatibility).
-It's responsive and looks good on all devices (from big screens to tiny ones).
-We're following the PWA checklist (we want that "install" button to show up).
-The app works offline (slow network? No problem, we got you covered).
-You can install the app on your desktop and add it to your home screen on mobile (quick access, remember?).
-We're deploying the app on GitHub Pages (let the world see it).
-We have an alert system (because sometimes we need to show important info).
-We're using data visualization (graphs, charts, cool stuff).
-Our tests cover at least 90% of the code (we're testing ninjas).
-We're monitoring the app's performance with a fancy online tool (performance matters, you know?).
-For more details, check out the project's documentation and the individual exercise deliverables.
+## Key Features
 
-Note: There are some mock-ups and advanced features in the complete README, but let's keep it simple for now.
+- Filter Events by City: Easily search and discover events based on your preferred city.
+- Show/Hide Event Details: Expand or collapse event details to view additional information as needed.
+- Specify Number of Events: Customize the number of events displayed to suit your preference.
+- Use the App When Offline: Access and view previously fetched event data even without an internet connection.
+- Add an App Shortcut to the Home Screen: Install Meet App as a shortcut on your device's home screen for quick access.
+- Visualize Event Details: Gain insights and understanding through charts depicting upcoming events in different cities.
+
+## User Stories
+
+1. As a user, I want to explore events in specific cities so that I can plan my attendance accordingly.
+2. As a user, I want the flexibility to view event details on demand, allowing me to focus on relevant information.
+3. As a user, I want to control the number of events displayed at once, enabling me to manage the amount of information.
+4. As a user, I want the ability to access event data even when offline, ensuring uninterrupted browsing.
+5. As a user, I want to add the app as a shortcut on my home screen, enabling quick and convenient access.
+6. As a user, I want to visualize event distribution across cities, providing a comprehensive overview of upcoming events.
+
+## Scenarios:
+
+### Feature 1: Filter Events By City
+Scenario 1: When I haven't specified a city, display upcoming events from all cities.
+Scenario 2: When I search for a city, show relevant suggestions to aid my selection.
+Scenario 3: After selecting a city, present a list of events specific to that location.
+
+### Feature 2: Show/Hide Event Details
+Scenario 1: By default, event details are hidden, providing a concise view of the events.
+Scenario 2: When I choose to view event details, expand the event card to display additional information.
+Scenario 3: If I prefer to hide event details, collapse the expanded event card to maintain an overview.
+
+### Feature 3: Specify Number of Events
+Scenario 1: When I haven't specified a number, display 32 events as the default count.
+Scenario 2: Allow me to customize the number of events shown to align with my preference.
+
+### Feature 4: Use the App When Offline
+Scenario 1: When I'm offline, load and display cached event data to ensure continuous access.
+Scenario 2: If I modify search settings while offline, inform me about the connectivity requirement.
+
+### Feature 5: Add an App Shortcut to the Home Screen
+Scenario 1: Provide an option for me to install Meet App as a shortcut on my device's home screen.
+
+### Feature 6: Visualize Event Details
+Scenario 1: Present a chart illustrating the distribution of upcoming events across different cities.
+
+### Thank You!

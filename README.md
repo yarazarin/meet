@@ -47,4 +47,16 @@ Scenario 1: Provide an option for me to install Meet App as a shortcut on my dev
 ### Feature 6: Visualize Event Details
 Scenario 1: Present a chart illustrating the distribution of upcoming events across different cities.
 
-### Thank You!
+
+#### Usage of Serverless Functions
+This project utilizes serverless functions to enhance scalability and efficiency:
+-installing dependencies,
+-configuring the provider,
+-customizing the function's logic,
+-deploying,
+-testing,
+and monitor performance.
+
+Serverless functions enable efficient task handling without traditional server management.
+
+##### Thank You!

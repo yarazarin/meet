@@ -19,4 +19,5 @@ describe("<EventList /> component", () => {
       allEvents.length
     );
   });
+  
 });

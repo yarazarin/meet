@@ -1,5 +1,5 @@
 import { fireEvent, render, screen } from "@testing-library/react";
-import Event from "../components/Event";
+import Event from "../Event";
 
 const event = {
     kind: "calendar#event",

@@ -1,7 +1,7 @@
 import { render } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import CitySearch from "../components/CitySearch";
-import { extractLocations, getEvents } from "../api";
+import CitySearch from "../CitySearch";
+import { extractLocations, getEvents } from "../../api";
 
 describe("<CitySearch /> component", () => {
   test("renders text input", () => {

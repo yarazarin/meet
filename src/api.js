@@ -1,4 +1,6 @@
-import mockData from "./mock-data.js";
+import {mockData} from "./mock-data.js";
+
+
 export const extractLocations = (events) => {
   const extractedLocations = events.map((event) => event.location);
   const locations = [...new Set(extractedLocations)];
@@ -20,7 +22,9 @@ export const getEvents = async () => {
   const getToken = async (code) => {
     const encodeCode = encodeURIComponent(code);
     const response = await fetch(
-      "https://0o36bci955.execute-api.eu-central-1.amazonaws.com/dev/api/token" + "/" + encodeCode
+      "https://0o36bci955.execute-api.eu-central-1.amazonaws.com/dev/api/token" +
+        "/" +
+        encodeCode
     );
     const { access_token } = await response.json();
     access_token && localStorage.setItem("access_token", access_token);

@@ -8,6 +8,13 @@
   margin: 0 auto;
   width: 70%;
 }
+.description {
+  margin: 20px auto;
+  text-align: center;
+  font-family: "Roboto";
+  color: #082904;
+}
+
 #number-of-events {
   margin: 20px auto;
 }
@@ -79,4 +86,8 @@
 }
 .suggestions li:hover {
   background-color: #eee;
+}
+
+b{
+  color: #007bff;
 }

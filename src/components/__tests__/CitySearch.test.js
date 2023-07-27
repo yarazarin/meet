@@ -1,4 +1,3 @@
-// src/__tests__/CitySearch.test.js
 import { render, within, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import CitySearch from '../../components/CitySearch';

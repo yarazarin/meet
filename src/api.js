@@ -1,3 +1,4 @@
+import NProgress from "nprogress";
 import mockData from "./mock-data";
 
 export const extractLocations = (events) => {
@@ -7,7 +8,9 @@ export const extractLocations = (events) => {
 };
 
 export const getEvents = async () => {
+  NProgress.start();
   if (window.location.href.startsWith("http://localhost")) {
+    NProgress.done();
     return mockData;
   }
 
@@ -76,8 +79,8 @@ const getToken = async (code) => {
 
     const response = await fetch(
       "https://0o36bci955.execute-api.eu-central-1.amazonaws.com/dev/api/token" +
-      "/" +
-      encodeCode
+        "/" +
+        encodeCode
     );
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);

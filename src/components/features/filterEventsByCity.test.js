@@ -83,6 +83,7 @@ defineFeature(feature, (test) => {
       suggestionListItems = within(CitySearchDOM).queryAllByRole("listitem");
       expect(suggestionListItems).toHaveLength(2);
     });
+
     when(
       "the user selects a city (e.g., “Berlin, Germany”) from the list",
       async () => {
@@ -96,6 +97,7 @@ defineFeature(feature, (test) => {
         expect(citySearchInput.value).toBe("Berlin, Germany");
       }
     );
+    
     and(
       "the user should receive a list of upcoming events in that city",
       async () => {

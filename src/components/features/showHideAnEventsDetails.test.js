@@ -94,7 +94,6 @@ defineFeature(feature, (test) => {
         }).then(() => {
           const eventList = AppComponent.container.querySelector("#event-list");
           const eventElements = within(eventList).queryAllByRole("listitem");
-          // Assuming the first event element is already expanded
           const expandButton = within(eventElements[0]).queryByTestId(
             "expand-button"
           );

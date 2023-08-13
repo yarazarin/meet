@@ -18,7 +18,9 @@ export const getEvents = async () => {
     NProgress.done();
     return events?JSON.parse(events):[];
   }
+
   const token = await getAccessToken();
+  
   if (token) {
     removeQuery();
     const url =

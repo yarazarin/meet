@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -41,6 +45,7 @@
 
 .event h3 {
   margin: 0;
+  padding: 5px;
 }
 .location,
 .dateTime {
@@ -88,7 +93,7 @@
   background-color: #eee;
 }
 
-b{
+b {
   color: #007bff;
 }
 
@@ -96,6 +101,30 @@ b{
   position: fixed;
   top: 0px;
   left: 20px;
-  width: 250px;
+  width: 400px;
   z-index: 1000;
+}
+
+.charts-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+  gap: 20px;
+  border: #dddddd 1px solid;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 100%;
+  zoom: 90%;
+}
+
+/* For smaller screens */
+@media (max-width: 1208px) {
+  .charts-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.event-genres-chart {
+  position: relative;
+  top: -40px;
 }
